@@ -1,5 +1,52 @@
 body{
-    font-family:cursive;
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 137, 237);
+    font-family: cursive;
+    font-style: italic;
+    font-variant: small-caps;
+    color: #333333;
+    background-color: #FFF8F0;
+}
+
+h1{
+    background-color: hsl(358, 100%, 82%);
+    color: rgb(255, 255, 255);
+    padding: .5em;
+    text-align: center;
+    border-bottom: .1em solid #333333;
+    margin-bottom: .3em;
+    border-top: .1em solid #333333;
+    margin-top: .3em;
+}
+
+h2{
+    background-color: hsl(358, 100%, 82%);
+    color: rgb(255, 255, 255);
+    padding: .5em;
+    text-align: center;
+    border-bottom: .1em solid #333333;
+    margin-bottom: .3em;
+    border-top: .1em solid #333333;
+    margin-top: .3em;
+}
+
+img{
+    margin: 1em;
+    border: .5em solid #333333;
+    max-width: 20rem;
+}
+
+a{
+    font-size: 1.5em;
+    margin: .5em;
+}
+
+a:hover{
+    color:hsl(358, 100%, 82%);
+}
+
+a{
+    color: #333333;
+}
+
+p{
+    margin: 1em;
 }
