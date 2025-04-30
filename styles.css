@@ -1,3 +1,5 @@
+/*GENERAL SELECTORS*/
+
 body{
     font-family: cursive;
     font-style: italic;
@@ -6,8 +8,8 @@ body{
     background-color: #FFF8F0;
 }
 
-h1{
-    background-color: hsl(358, 100%, 82%);
+h1, h2{
+    background-color: rgb(254, 163, 172);
     color: rgb(255, 255, 255);
     padding: .5em;
     text-align: center;
@@ -15,38 +17,51 @@ h1{
     margin-bottom: .3em;
     border-top: .1em solid #333333;
     margin-top: .3em;
-}
-
-h2{
-    background-color: hsl(358, 100%, 82%);
-    color: rgb(255, 255, 255);
-    padding: .5em;
-    text-align: center;
-    border-bottom: .1em solid #333333;
-    margin-bottom: .3em;
-    border-top: .1em solid #333333;
-    margin-top: .3em;
-}
-
-img{
-    margin: 1em;
-    border: .5em solid #333333;
-    max-width: 20rem;
-}
-
-a{
-    font-size: 1.5em;
-    margin: .5em;
-}
-
-a:hover{
-    color:hsl(358, 100%, 82%);
-}
-
-a{
-    color: #333333;
 }
 
 p{
     margin: 1em;
 }
+
+a{
+    font-size: 1.5em;
+    margin: .5em;
+    color: #333333;
+}
+
+a:hover{
+    color: rgb(254, 163, 172);
+}
+
+img{
+    margin: 1em;
+    border: .5em solid #333333;
+    max-width: 20em;
+}
+
+footer p{
+    font-size: .8em;
+}
+
+/*CLASS SELECTORS*/
+
+.intro{
+    font-weight: bold;
+}
+
+
+/*ID SELECTORS*/
+
+
+/* 
+Type selector
+ID or Class selector
+Relational selector
+Combination selector
+Attribute or pseudo calss or pseudo element
+
+  Reletive units of measurement
+  RGB or hex values
+  Color of at least one element
+  at least 2 properties that style fonts
+*/ 
