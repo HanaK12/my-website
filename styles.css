@@ -1,67 +1,110 @@
-/*GENERAL SELECTORS*/
+/* ================================
+   GENERAL ELEMENT SELECTORS
+================================= */
 
-body{
-    font-family: cursive;
-    font-style: italic;
-    font-variant: small-caps;
-    color: #333333;
-    background-color: #FFF8F0;
+body {
+  font-family: cursive;
+  font-style: italic;
+  font-variant: small-caps;
+  color: #333333;
+  background-color: #fde5c8cf;
 }
 
-h1, h2{
-    background-color: rgb(254, 163, 172);
-    color: rgb(255, 255, 255);
-    padding: .5em;
-    text-align: center;
-    border-bottom: .1em solid #333333;
-    margin-bottom: .3em;
-    border-top: .1em solid #333333;
-    margin-top: .3em;
+h1,h2 {
+  background-color: rgba(255, 119, 137, 0.563);
+  color: rgb(255, 255, 255);
+  padding: 0.5em;
+  text-align: center;
+  border-top: 0.1em solid #B25D6B;
+  border-bottom: 0.1em solid rgb(178, 93, 107);
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
 }
 
-p{
-    margin: 1em;
+header {background-color: rgba(255, 119, 137, 0.563);}
+
+p {margin: 1em;}
+
+a {
+  font-size: 1em;
+  margin: 0.5em;
+  color: #333333;
+  text-decoration: none;
 }
 
-a{
-    font-size: 1.5em;
-    margin: .5em;
-    color: #333333;
+a:hover {color: rgba(255, 119, 137, 0.563);}
+
+br{clear: left;}
+
+img {
+  margin: 1em;
+  border: 0.5em solid #333333;
+  width: 15em;
+  height: 15em;
 }
 
-a:hover{
-    color: rgb(254, 163, 172);
+footer p {font-size: 0.8em;}
+
+
+/* ================================
+     CLASS SELECTORS
+  ================================= */
+
+.intro {font-weight: bold;}
+
+.PS {
+  font-weight: bold;
+  font-stretch: condensed;
 }
 
-img{
-    margin: 1em;
-    border: .5em solid #333333;
-    max-width: 20em;
+.Patterns {float: left;}
+
+.img-float-left{
+  float: left;
+  margin: 2em;
 }
 
-footer p{
-    font-size: .8em;
-}
-
-/*CLASS SELECTORS*/
-
-.intro{
-    font-weight: bold;
+.columnP{
+  margin: 2em;
 }
 
 
-/*ID SELECTORS*/
+/* ================================
+     ID SELECTORS
+  ================================= */
+
+  
 
 
-/* 
-Type selector
-ID or Class selector
-Relational selector
-Combination selector
-Attribute or pseudo calss or pseudo element
+/* ================================
+     NAVIGATION STYLES (.nav)
+  ================================= */
 
-  Reletive units of measurement
-  RGB or hex values
-  Color of at least one element
-  at least 2 properties that style fonts
-*/ 
+.nav h2 {
+  font-size: 2em;
+  font-weight: bolder;
+  background-color: none;
+  border-top: .1em solid rgb(0, 0, 0);
+  border-bottom: none;
+  padding: 1em;
+}
+
+.nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: .5em;
+  margin: 0;
+  border-bottom: 0.2em solid #000000;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  font-size: large;
+
+}
+
+.nav a:hover {color: #FAF1E6;}
