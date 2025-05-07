@@ -16,7 +16,7 @@ h1,h2 {
   padding: 0.5em;
   text-align: center;
   border-top: 0.1em solid #B25D6B;
-  border-bottom: 0.1em solid rgb(178, 93, 107);
+  border-bottom: 0.1em solid #B25D6B;
   margin-top: 0.3em;
   margin-bottom: 0.3em;
 }
@@ -69,6 +69,8 @@ footer p {font-size: 0.8em;}
 }
 
 
+
+
 /* ================================
      ID SELECTORS
   ================================= */
@@ -108,3 +110,22 @@ footer p {font-size: 0.8em;}
 }
 
 .nav a:hover {color: #FAF1E6;}
+
+.mainColumn{
+  float: left;
+  width: 50%;
+}
+
+
+.asideColumn{
+  float: right;
+  width: 45%;
+}
+
+.asideColumn h2{
+  border: 0.1em solid #B25D6B;
+}
+
+.mainColumn h2{
+  border: 0.1em solid #B25D6B;
+}
