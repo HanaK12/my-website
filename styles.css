@@ -11,7 +11,12 @@ body {
 }
 
 h1,h2 {
-  background-color: rgba(255, 119, 137, 0.563);
+  background: linear-gradient(
+        18deg, 
+        rgba(245, 79, 101, 0.563), 
+        rgba(255, 201, 211, 0.792),
+        rgba(245, 79, 101, 0.563)
+    );
   color: rgb(255, 255, 255);
   padding: 0.5em;
   text-align: center;
@@ -21,7 +26,7 @@ h1,h2 {
   margin-bottom: 0.3em;
 }
 
-header {background-color: rgba(255, 119, 137, 0.563);}
+header {background-color: rgba(255, 201, 211, 0.792);}
 
 p {margin: 1em;}
 
