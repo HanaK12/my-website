@@ -10,13 +10,12 @@ body {
   background-color: #fde5c8cf;
 }
 
-h1,h2 {
-  background: linear-gradient(
-        18deg, 
-        rgba(245, 79, 101, 0.563), 
-        rgba(255, 201, 211, 0.792),
-        rgba(245, 79, 101, 0.563)
-    );
+h1,
+h2 {
+  background: linear-gradient(18deg,
+      rgba(245, 79, 101, 0.563),
+      rgba(255, 198, 208, 0.792),
+      rgba(245, 79, 101, 0.563));
   color: rgb(255, 255, 255);
   padding: 0.5em;
   text-align: center;
@@ -26,9 +25,13 @@ h1,h2 {
   margin-bottom: 0.3em;
 }
 
-header {background-color: rgba(255, 201, 211, 0.792);}
+header {
+  background-color: rgba(255, 201, 211, 0.792);
+}
 
-p {margin: 1em;}
+p {
+  margin: 1em;
+}
 
 a {
   font-size: 1em;
@@ -37,42 +40,59 @@ a {
   text-decoration: none;
 }
 
-a:hover {color: rgba(255, 119, 137, 0.563);}
+a:hover {
+  color: rgba(255, 119, 137, 0.563);
+}
 
-br{clear: left;}
+br {
+  clear: left;
+}
 
 img {
   margin: 1em;
   border: 0.5em solid #333333;
-  width: 15em;
-  height: 15em;
+  max-width: 15em;
+  max-height: 15em;
+  min-width: 10em;
+  min-height: 10em;
 }
 
-footer p {font-size: 0.8em;}
+footer p {
+  font-size: 0.8em;
+}
 
 
 /* ================================
      CLASS SELECTORS
   ================================= */
 
-.intro {font-weight: bold;}
+.intro {
+  font-weight: bold;
+}
 
 .PS {
   font-weight: bold;
   font-stretch: condensed;
 }
 
-.Patterns {float: left;}
+.Patterns {
+  float: left;
+}
 
-.img-float-left{
+.img-float-left {
   float: left;
   margin: 2em;
 }
 
-.columnP{
+.columnP {
   margin: 2em;
 }
 
+.scale_img {
+  border-radius: 3em;
+  max-width: 33%;
+  max-height: 33%;
+}
 
 
 
@@ -80,7 +100,7 @@ footer p {font-size: 0.8em;}
      ID SELECTORS
   ================================= */
 
-  
+
 
 
 /* ================================
@@ -114,23 +134,72 @@ footer p {font-size: 0.8em;}
 
 }
 
-.nav a:hover {color: #FAF1E6;}
+.nav a:hover {
+  color: #FAF1E6;
+}
 
-.mainColumn{
+/* ================================
+     Two Coulumn Selectors
+  ================================= */
+
+.mainColumn {
   float: left;
   width: 50%;
 }
 
 
-.asideColumn{
+.asideColumn {
   float: right;
   width: 45%;
 }
 
-.asideColumn h2{
+.asideColumn h2 {
   border: 0.1em solid #B25D6B;
 }
 
-.mainColumn h2{
+.mainColumn h2 {
   border: 0.1em solid #B25D6B;
 }
+
+/* ================================
+     Media Queries
+  ================================= */
+
+@media only screen and (max-width: 950px) {
+  .asideColumn {
+  float: left;
+  width: 100%;
+  }
+
+  .mainColumn {
+  width: 100%;
+}
+}
+
+@media only screen and (max-width: 705px) {
+  nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 654px) {
+    .mainColumn{
+     text-align: center;
+}
+    .mainColumn img{
+      float: none;
+   
+      text-align: center;
+    }
+}
+
+/*
+  Open link in new tab (links in materials page)
+  One link that links to a placeholder on the same page ( Bottom of page for stitches)
+Two media queries that fies the layout posed by at least two breakpoints (One for nav, one for double coulumn page)
+  All pages need fluid layouts
+  include at least one scalable image (images on front page)
+Comments to explain code
+*/
