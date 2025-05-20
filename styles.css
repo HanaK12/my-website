@@ -51,8 +51,8 @@ br {
 img {
   margin: 1em;
   border: 0.5em solid #333333;
-  max-width: 15em;
-  max-height: 15em;
+  max-width: 30em;
+  max-height: 30em;
   min-width: 10em;
   min-height: 10em;
 }
@@ -63,7 +63,7 @@ footer p {
 
 
 /* ================================
-     CLASS SELECTORS
+           CLASS SELECTORS
   ================================= */
 
 .intro {
@@ -90,22 +90,44 @@ footer p {
 
 .scale_img {
   border-radius: 3em;
-  max-width: 33%;
-  max-height: 33%;
+  width:auto;
+  max-width: 90%;
+  height: 90%;
+  aspect-ratio: 1 / 1;
+  object-fit:cover;
 }
 
 
 
 /* ================================
-     ID SELECTORS
+       GRID LAYOUT (Home page)
   ================================= */
+.GridLayout{
+  height: 800px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: .4fr 2fr 2fr 2fr;
+  grid-template-areas: 
+  "hdr hdr"
+  "im1 pg1"
+  "im2 pg2"
+  "im3 pg3"
+  ;
+
+  #hdr{grid-area:hdr ;}
+  #img1{grid-area:im1 ;}
+  #img2{grid-area:im2 ;}
+  #img3{grid-area:im3 ;}
+  #p1{grid-area:pg1 ;}
+  #p2{grid-area:pg2 ;}
+  #p3{grid-area:pg3 ;}
+}
 
 
 
-
-/* ================================
-     NAVIGATION STYLES (.nav)
-  ================================= */
+/* ======================================
+     NAVIGATION STYLES (.nav) (flexbox)
+  ======================================= */
 
 .nav h2 {
   font-size: 2em;
@@ -138,18 +160,23 @@ footer p {
   color: #FAF1E6;
 }
 
-/* ================================
-     Two Coulumn Selectors
-  ================================= */
+/* ====================================================
+     Two Coulumn Selectors (Materials Page)(flexbox)
+  =====================================================*/
 
+
+.container{
+  display: flex;
+  flex-direction: row;
+}
 .mainColumn {
-  float: left;
+  flex: 1;
   width: 50%;
 }
 
 
 .asideColumn {
-  float: right;
+  flex: 1;
   width: 45%;
 }
 
@@ -162,18 +189,18 @@ footer p {
 }
 
 /* ================================
-     Media Queries
+            Media Queries
   ================================= */
 
 @media only screen and (max-width: 950px) {
-  .asideColumn {
-  float: left;
-  width: 100%;
+  .container {
+    flex-direction: column;
   }
 
-  .mainColumn {
+  .mainColumn,.asideColumn {
   width: 100%;
 }
+
 }
 
 @media only screen and (max-width: 705px) {
@@ -196,10 +223,9 @@ footer p {
 }
 
 /*
-  Open link in new tab (links in materials page)
-  One link that links to a placeholder on the same page ( Bottom of page for stitches)
-Two media queries that fies the layout posed by at least two breakpoints (One for nav, one for double coulumn page)
-  All pages need fluid layouts
-  include at least one scalable image (images on front page)
-Comments to explain code
+  two flex containers
+  at least one grid component or layout
+  no more under construction
+  media queries to fix webpages
+ comments
 */
