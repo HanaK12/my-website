@@ -82,6 +82,8 @@ footer p {
 .img-float-left {
   float: left;
   margin: 2em;
+  max-width: 240px;
+  max-height: 240px;
 }
 
 .columnP {
@@ -95,6 +97,8 @@ footer p {
   height: 90%;
   aspect-ratio: 1 / 1;
   object-fit:cover;
+  margin: 1em;
+  max-height: 230px;
 }
 
 
@@ -103,8 +107,9 @@ footer p {
        GRID LAYOUT (Home page)
   ================================= */
 .GridLayout{
-  height: 800px;
   display: grid;
+  gap: 1em;
+  
   grid-template-columns: 1fr 3fr;
   grid-template-rows: .4fr 2fr 2fr 2fr;
   grid-template-areas: 
@@ -113,7 +118,7 @@ footer p {
   "im2 pg2"
   "im3 pg3"
   ;
-
+}
   #hdr{grid-area:hdr ;}
   #img1{grid-area:im1 ;}
   #img2{grid-area:im2 ;}
@@ -121,10 +126,15 @@ footer p {
   #p1{grid-area:pg1 ;}
   #p2{grid-area:pg2 ;}
   #p3{grid-area:pg3 ;}
-}
+  
+  #img1,#img2,#img3,#p1,#p2,#p3{
+    border: .3em double #B25D6B;
+  }
 
-
-
+  #p1,#p2,#p3{
+    padding: 2em;
+  }
+  
 /* ======================================
      NAVIGATION STYLES (.nav) (flexbox)
   ======================================= */
@@ -168,16 +178,15 @@ footer p {
 .container{
   display: flex;
   flex-direction: row;
-}
-.mainColumn {
-  flex: 1;
-  width: 50%;
+  gap: 2em;
 }
 
+.mainColumn {
+  flex: 1;
+}
 
 .asideColumn {
   flex: 1;
-  width: 45%;
 }
 
 .asideColumn h2 {
@@ -191,7 +200,19 @@ footer p {
 /* ================================
             Media Queries
   ================================= */
-
+@media only screen and (max-width:978px){
+  .GridLayout{
+    display: block;
+    text-align: center;
+  }
+  #img1, #img2, #img3{
+    display:inline-block;
+    max-height: none;
+  }
+  #p1,#p2,#p3{
+    border-radius: 3em;
+  }
+}
 @media only screen and (max-width: 950px) {
   .container {
     flex-direction: column;
