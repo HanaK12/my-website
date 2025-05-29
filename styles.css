@@ -3,9 +3,11 @@
 ================================= */
 
 body {
-  font-family: cursive;
+   font-family: "Sour Gummy", sans-serif;
   font-style: italic;
-  font-variant: small-caps;
+ font-size: 25px;
+ font-variant: small-caps;
+ letter-spacing: 2px;
   color: #333333;
   background-color: #fde5c8cf;
 }
@@ -55,12 +57,27 @@ img {
   max-height: 30em;
   min-width: 10em;
   min-height: 10em;
+  
 }
 
 footer p {
   font-size: 0.8em;
 }
+/* ================================
+           ID SELECTORS
+  ================================= */
 
+  #logo_img{
+    border: none;
+    height: 1.5em;
+    width: 1.5em;
+    min-width: 1em;
+    min-height: 1em;
+  }
+  #logo_container{
+    display: flex;
+  align-items: center;
+  }
 
 /* ================================
            CLASS SELECTORS
@@ -162,7 +179,6 @@ footer p {
   text-decoration: none;
   color: #000000;
   font-weight: bold;
-  font-size: large;
 
 }
 
@@ -178,7 +194,8 @@ footer p {
 .container{
   display: flex;
   flex-direction: row;
-  gap: 2em;
+  gap: 3em;
+  padding: 1em 1em;
 }
 
 .mainColumn {
