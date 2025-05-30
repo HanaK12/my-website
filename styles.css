@@ -336,13 +336,15 @@ footer p {
   flex: 1;
 }
 
-.asideColumn h2 {
+.asideColumn h2, .mainColumn h2 {
   border: 0.1em solid #B25D6B;
 }
 
-.mainColumn h2 {
-  border: 0.1em solid #B25D6B;
-}
+  .asideColumn p,
+  .mainColumn p {
+    text-align: center;
+  }
+
 
 /* ================================
             Media Queries
@@ -384,18 +386,15 @@ footer p {
     padding: 0em;
   }
 
-  .mainColumn,
-  .asideColumn {
-    width: 100%;
-  }
 
   .asideColumn h2,
   .mainColumn h2 {
-    width: 100%;
+
     margin: 0em;
     border-right: none;
     border-left: none;
   }
+
 
 }
 
