@@ -9,21 +9,22 @@
     <title>Basic Stitches</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/480589795b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/480589795b.js" crossorigin="anonymous"></script>
 </head>
 
 
 
 <body>
-        <header class="nav">
-        
+    <header class="nav">
+
         <h2>A Guide for Beginner Crocheters</h2>
         <nav>
             <ul>
                 <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
-                <li><a href="basicStitches.html"><i class="fa-brands fa-slack"></i></i> Basic Stitches</a></li>
+                <li><a href="basicStitches.html"><i class="fa-brands fa-slack"></i> Basic Stitches</a></li>
                 <li><a href="materials.html"><i class="fa-solid fa-scissors"></i> Materials</a></li>
                 <li><a href="patternReading.html"><i class="fa-solid fa-glasses"></i> Pattern Reading</a></li>
                 <li><a href="easyPatterns.html"><i class="fa-solid fa-chess-board"></i> Easy Patterns</a></li>
@@ -40,18 +41,57 @@
             knot, chain,
             single crochet, double crochet, half double crochet, and slip stitch.</p>
 
-        <h2>The Slip Knot (sk)</h2>
-        <p>To complete a slip knot:</p>
-        <ol>
-            <li>Create a loop at the end of the yarn with the short end underneath and the continuous part on top.</li>
-            <li>Insert your right pointer finger and thumb into loop.</li>
-            <li>At the same time, use your left hand to hold onto the short end of the yarn to ensure that the loop does
-                not come undone.</li>
-            <li>Now, use your right pointer finger and thumb to grab the continuous end of the loop.</li>
-            <li>Pull the continuous end of the yarn through the loop and let it tighten.</li>
-            <li>Lastly, insert your hook into the loop and pull the short end of the yarn unti the loop closes on your
-                hook.</li>
-        </ol>
+
+
+        <!-- Stitch Table -->
+        <h2>Stitch Table</h2>
+
+        <table id="stitch_table">
+            <thead>
+                <tr>
+                    <th>Full Stitch Name</th>
+                    <th>Stitch Abbreviation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#sk">Slip Knot</a></td>
+                    <td class="abbr"><a href="#sk">sk</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#ch">Chain</a></td>
+                    <td class="abbr"><a href="#ch">ch</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#ss">Slip Stitch</a></td>
+                    <td class="abbr"><a href="#ss">ss</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#sc">Single Crochet</a></td>
+                    <td class="abbr"><a href="#sc">sc</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#dc">Double Crochet</a></td>
+                    <td class="abbr"><a href="#dc">dc</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#hdc">Half Double Crochet</a></td>
+                    <td class="abbr"><a href="#hdc">hdc</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#tr">Treble or Tripple Crochet</a></td>
+                    <td class="abbr"><a href="#tr">tr</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#inc">Increase</a></td>
+                    <td class="abbr"><a href="#inc">inc</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#sc2tog">Single Crochet 2 Together or Decrease</a></td>
+                    <td class="abbr"><a href="#sc2tog">sc2tog or dec</a></td>
+                </tr>
+            </tbody>
+        </table>
 
         <h2>The Magic Ring</h2>
         <p>To complete a magic ring:</p>
@@ -74,7 +114,27 @@
                 loop you just closed.</li>
         </ol>
 
-        <h2>The Chain (ch)</h2>
+        <img class="finished" src="img/Magic Ring.png" alt="AI generated image of a Magic Ring">
+        <p class="finished_caption">Image of Completed Magic Ring</p>
+
+        <h2 id="sk">The Slip Knot (sk)</h2>
+        <p>To complete a slip knot:</p>
+        <ol>
+            <li>Create a loop at the end of the yarn with the short end underneath and the continuous part on top.</li>
+            <li>Insert your right pointer finger and thumb into loop.</li>
+            <li>At the same time, use your left hand to hold onto the short end of the yarn to ensure that the loop does
+                not come undone.</li>
+            <li>Now, use your right pointer finger and thumb to grab the continuous end of the loop.</li>
+            <li>Pull the continuous end of the yarn through the loop and let it tighten.</li>
+            <li>Lastly, insert your hook into the loop and pull the short end of the yarn unti the loop closes on your
+                hook.</li>
+        </ol>
+        <img class="finished" src="img/Slip Knot.png" alt="AI generated image of a Slip Knot">
+        <p class="finished_caption">Image of Completed Slip Knot</p>
+
+        
+
+        <h2 id="ch"><i class="fa-solid fa-link"></i> The Chain (ch) <i class="fa-solid fa-link"></i></h2>
         <p>To complete a chain:</p>
         <ol>
             <li>Take your hook in your right hand and your yarn in your left to ensure stability</li>
@@ -83,8 +143,10 @@
                 your slip knot or from a previous stitch)</li>
             <li>You should end up with one loop left on your hook.</li>
         </ol>
+        <img class="finished" src="img/Chain.png" alt="AI generated image of a Chain">
+        <p class="finished_caption">Image of Completed Chain Stitches</p>
 
-        <h2>The Slip Stitch (ss)</h2>
+        <h2 id="ss">The Slip Stitch (ss)</h2>
         <p>To complete a slip stitch:</p>
         <ol>
             <li>Insert your hook into the next stitch.</li>
@@ -93,8 +155,10 @@
             <li>Pull through the remaining loop on your hook.</li>
             <li>You should now have only one loop on your hook.</li>
         </ol>
+        <img class="finished" src="img/Slip Stitch.png" alt="AI generated image of a Circle with a slip Stitch edge">
+        <p class="finished_caption">Image of a Circle rimmed with Slip Stitches</p>
 
-        <h2>The Single Crochet (sc)</h2>
+        <h2 id="sc">The Single Crochet (sc)</h2>
         <p>To complete a single crochet:</p>
         <ol>
             <li>Insert your hook into the next stitch.</li>
@@ -105,9 +169,11 @@
             <li>Pull through both loops on your hook.</li>
             <li>You should now only have one loop on your hook.</li>
         </ol>
+        <img class="finished" src="img/Single Crochet.png" alt="AI generated image of a Square of Single Crochet Stitches">
+        <p class="finished_caption">Image of a Hankerchief made of Single Crochet stitches</p>
 
 
-        <h2>The Double Crochet (dc)</h2>
+        <h2 id="dc">The Double Crochet (dc)</h2>
         <p>To complete a double crochet:</p>
         <ol>
             <li>Wrap the yarn around your hook.</li>
@@ -123,8 +189,10 @@
             <li>Pull through the lat two loops on your hook.</li>
             <li>You should now only have one loop on your hook.</li>
         </ol>
+        <img class="finished" src="img/Double Crochet.png" alt="AI generated image of a Square of Double Crochet Stitches">
+        <p class="finished_caption">Image of a hankerchief being made of Double Crochet stitches</p>
 
-        <h2>The Half Double Crochet (hdc)</h2>
+        <h2 id="hdc">The Half Double Crochet (hdc)</h2>
         <p>To complete a half double crochet:</p>
         <ol>
             <li>Wrap the yarn around your hook.</li>
@@ -137,9 +205,11 @@
             <li>Pull through all three loops on your hook.</li>
             <li>You should now only have one loop on your hook.</li>
         </ol>
+        <img class="finished" src="img/Half Double Crochet.png" alt="AI generated image of a Square of Half Double Crochet Stitches">
+        <p class="finished_caption">Image of a hankerchief being made of Half Double Crochet stitches</p>
 
 
-        <h2>The Treble aka Triple Crochet(tr)</h2>
+        <h2 id="tr">The Treble aka Triple Crochet(tr)</h2>
         <p>To complete a treble:</p>
         <ol>
             <li>Wrap the yarn around your hook twice.</li>
@@ -158,8 +228,10 @@
             <li>Pull through the last two loops on your hook.</li>
             <li>You should now only have one loop on your hook.</li>
         </ol>
+        <img class="finished" src="img/Treble.png" alt="AI generated image of a project made of Treble Stitches">
+        <p class="finished_caption">Image of a project being made of Treble stitches</p>
 
-        <h2>The Increase (inc)</h2>
+        <h2 id="inc">The Increase (inc)</h2>
         <p>To complete an Increase:</p>
         <ol>
             <li>Insert your hook into the next stitch.</li>
@@ -177,8 +249,10 @@
             <li>Pull through both loops on your hook.</li>
             <li>You should now only have one loop on your hook.</li>
         </ol>
+        <img class="finished" src="img/Increase.png" alt="AI generated image of a project made of Increase stitches">
+        <p class="finished_caption">Image of a project being made of increase stitches and double crochet stitches</p>
 
-        <h2>The Single Crochet 2 Together or Decrease (sc2tog or dec)</h2>
+        <h2 id="sc2tog">The Single Crochet 2 Together or Decrease (sc2tog or dec)</h2>
         <p>To complete a Decrease:</p>
         <ol>
             <li>Insert your hook into the next stitch.</li>
@@ -195,6 +269,11 @@
         </ol>
         <p class="PS">P.S. To hide the decrease better, insert your hook into the front loops only.</p>
         <br>
+        <img class="finished" src="img/Decrease.png" alt="AI generated image of a project made of decrease stitches">
+        <p class="finished_caption">Image of a project being made of decrease stitches</p>
+
+
+        
         <p><a href="#top">Click to Return to Top</a></p>
         <br>
 

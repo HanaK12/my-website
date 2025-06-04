@@ -47,7 +47,7 @@ a {
 }
 
 a:hover {
-  color: rgba(255, 119, 137, 0.563);
+  color: #9E2A2B;
 }
 
 br {
@@ -69,6 +69,7 @@ ol {
   counter-reset: item;
   padding-left: 0;
   margin-left: .5em;
+  margin-bottom: 2em;
 }
 
 ol li {
@@ -107,6 +108,7 @@ footer p {
   align-items: center;
 }
 
+
 /* ================================
            CLASS SELECTORS
   ================================= */
@@ -141,8 +143,20 @@ footer p {
   margin-left: 1em;
 }
 
-.a_margin{
-  margin:0.5em;
+.a_margin {
+  margin: 0.5em;
+}
+
+.finished{
+  width:20%;
+  height:auto;
+  display: block;
+  margin: auto;
+}
+
+.finished_caption{
+  font-size: .8em;
+  text-align: center;
 }
 
 
@@ -221,6 +235,7 @@ footer p {
 #p4 {
   grid-area: pg4;
 }
+
 #p5 {
   grid-area: pg5;
 }
@@ -252,8 +267,7 @@ footer p {
 #p5,
 #p6,
 #p7,
-#p8
- {
+#p8 {
   padding: 0em;
   margin: .55em;
   border: .3em double #B25D6B;
@@ -306,15 +320,55 @@ footer p {
 
 .nav a {
   text-decoration: none;
+  display: inline-block;
   color: #000000;
   font-weight: bold;
-
+  transition: transform 0.2s ease, color 0.2s ease;
 
 }
 
 .nav a:hover {
-  color: #FAF1E6;
+  transform: scale(1.1);
 }
+
+/* ================================
+           STITCH TABLE
+  ================================= */
+#stitch_table {
+  border-collapse: collapse;
+  margin: 20px auto;
+  border: 2px solid #B25D6B;
+}
+
+#stitch_table td,
+#stitch_table th {
+  border: .1em solid #B25D6B;
+  /* Cell borders */
+  padding: .5em;
+  text-align: center;
+  background: linear-gradient(18deg,
+      rgba(245, 79, 101, 0.563),
+      rgba(255, 198, 208, 0.792),
+      rgba(245, 79, 101, 0.563));
+}
+
+
+#stitch_table a {
+  color: #000000;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+#stitch_table a:hover {
+  transform: scale(1.1);
+}
+
+#stitch_table .abbr a:hover{
+  transform: scale(1.5);
+}
+
+
 
 /* ====================================================
      Two Coulumn Selectors (Materials Page)(flexbox)
@@ -340,14 +394,15 @@ footer p {
   flex: 1;
 }
 
-.asideColumn h2, .mainColumn h2 {
+.asideColumn h2,
+.mainColumn h2 {
   border: 0.1em solid #B25D6B;
 }
 
-  .asideColumn p,
-  .mainColumn p {
-    text-align: center;
-  }
+.asideColumn p,
+.mainColumn p {
+  text-align: center;
+}
 
 
 /* ================================
@@ -366,8 +421,7 @@ footer p {
   #img5,
   #img6,
   #img7,
-  #img8
-   {
+  #img8 {
     display: inline-block;
     max-height: none;
   }
@@ -379,7 +433,7 @@ footer p {
   #p5,
   #p6,
   #p7,
-  #p8{
+  #p8 {
     border-radius: 3em;
   }
 }
