@@ -147,14 +147,14 @@ footer p {
   margin: 0.5em;
 }
 
-.finished{
-  width:20%;
-  height:auto;
+.finished {
+  width: 20%;
+  height: auto;
   display: block;
   margin: auto;
 }
 
-.finished_caption{
+.finished_caption {
   font-size: .8em;
   text-align: center;
 }
@@ -364,7 +364,7 @@ footer p {
   transform: scale(1.1);
 }
 
-#stitch_table .abbr a:hover{
+#stitch_table .abbr a:hover {
   transform: scale(1.5);
 }
 
@@ -409,6 +409,12 @@ footer p {
             Media Queries
   ================================= */
 @media only screen and (max-width:978px) {
+  body {
+    font-size: 1em;
+  }
+
+
+
   .GridLayout {
     display: block;
     text-align: center;
@@ -423,7 +429,7 @@ footer p {
   #img7,
   #img8 {
     display: inline-block;
-    max-height: none;
+    max-height: 20em;
   }
 
   #p1,
